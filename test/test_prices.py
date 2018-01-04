@@ -3,11 +3,13 @@
 
 import unittest
 
+from src.prices import Comparator
 
-class Test(unittest.TestCase):
 
-    def test_true(self):
-        self.assertTrue(True)
+class TestPriceComparator(unittest.TestCase):
+
+    def test_new_comparator(self):
+        comparator = Comparator()
 
 if __name__ == '__main__':
     unittest.main()
