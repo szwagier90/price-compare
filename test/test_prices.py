@@ -8,8 +8,11 @@ from src.prices import Comparator
 
 class TestPriceComparator(unittest.TestCase):
 
-    def test_new_comparator(self):
-        comparator = Comparator()
+    def setUp(self):
+        self.comparator = Comparator()
+
+    def test_add_no_products_return_empty_list(self):
+        self.assertListEqual(self.comparator.show_all(), [])
 
 if __name__ == '__main__':
     unittest.main()

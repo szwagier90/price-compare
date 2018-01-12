@@ -2,4 +2,5 @@
 # -*- coding: utf-8 -*-
 
 class Comparator:
-    pass
+    def show_all(self):
+        return []
