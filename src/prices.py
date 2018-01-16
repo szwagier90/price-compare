@@ -2,5 +2,11 @@
 # -*- coding: utf-8 -*-
 
 class Comparator:
+    def __init__(self):
+        self.records = []
+
     def show_all(self):
-        return []
+        return self.records
+
+    def add_record(self, record):
+        self.records.append(record)
