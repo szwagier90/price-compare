@@ -3,11 +3,13 @@
 
 import unittest
 
+from src.prices import Prices
 
 class Test(unittest.TestCase):
 
-    def test_true(self):
-        self.assertTrue(True)
+    def test_new_empty_unnamed_database(self):
+        prices = Prices()
+
 
 if __name__ == '__main__':
     unittest.main()
